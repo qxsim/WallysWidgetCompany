@@ -30,7 +30,7 @@ function widgetCalculate($widgetNum) {
         $remainingValue = 0;
 
         $divResult = $widgetNum / $packArray[$position];
-        $divValue = $divValue = (gettype($divResult) == 'integer') ? $divResult : floor($divResult);
+        $divValue = (gettype($divResult) == 'integer') ? $divResult : floor($divResult);
         $divRemainder = $divResult - $divValue;
 
         // if the remainder is 0, the request divides perfectly into a pack, so increment the value in the dictionary and end the loop.
